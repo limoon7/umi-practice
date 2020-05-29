@@ -122,6 +122,12 @@ export default {
               component: './list/table-list',
             },
             {
+              name: 'canvas',
+              icon: 'smile',
+              path: '/canvas/index',
+              component: './canvas/index',
+            },
+            {
               component: './404',
             },
           ],
@@ -155,7 +161,7 @@ export default {
         resourcePath: string;
       },
       _: string,
-      localName: string
+      localName: string,
     ) => {
       if (
         context.resourcePath.includes('node_modules') ||
